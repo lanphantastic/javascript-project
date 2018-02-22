@@ -7,6 +7,18 @@ body {
 	margin: 100px auto;
 }
 
+#button {
+  /* font style */
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 32px;
+  text-decoration: none;
+
+  /* button itself */
+	padding: 15px 30px;
+	background: #bc1939;
+
+}
+
 header {
 	padding: 20px 40px;
   text-align: center;
