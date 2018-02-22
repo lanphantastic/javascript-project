@@ -1,11 +1,12 @@
 // SOLUTION #1 - RAW JAVASCRIPT WITH ADDEVENTLISTENER ////////////
 document.addEventListener("DOMContentLoaded", function() {
 
-  var button = document.getElementById('button');
-  var body = document.querySelector('body');
+  const button = document.getElementById('button');
+  const body = document.querySelector('body');
 
   button.addEventListener('click',function() {
-    var newColor = '#' + Math.random().toString(16).slice(2,8);
+    let hexColorCode = Math.random().toString(16).slice(2,8);
+    let newColor = `#${hexColorCode}`;
     return body.style.background = newColor;
   });
 });
