@@ -9,6 +9,7 @@ body {
 
 #button {
   /* font style */
+  color: #f9fafa;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 32px;
   text-decoration: none;
@@ -17,6 +18,8 @@ body {
 	padding: 15px 30px;
 	background: #bc1939;
 
+  /* cool css look */
+  box-shadow:12px 12px 5px 1px #831127;
 }
 
 header {
