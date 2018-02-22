@@ -1,3 +1,27 @@
 body {
 	background: #fff18e;
 }
+
+#button_container {
+	text-align: center;
+	margin: 100px auto;
+}
+
+header {
+	padding: 20px 40px;
+  text-align: center;
+	background: rgba(0,0,0,0.1)
+}
+
+header a:link {
+  /* font style */
+	font-family: Arial, sans-serif;
+	color: #5f5f5f;
+	letter-spacing: 2px;
+	font-size: 13px;
+
+  /* position */
+	margin-right: 15px;
+	padding-left: 5px;
+	text-decoration: none;
+}
