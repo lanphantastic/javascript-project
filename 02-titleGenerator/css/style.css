@@ -1,0 +1,16 @@
+@import "https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab";
+
+body {
+  background-color: #3498db;
+}
+
+p, a {
+  font-family: Roboto, Sans-serif;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 500px) {
+  p, a {
+    font-size: 1em;
+  }
+}
