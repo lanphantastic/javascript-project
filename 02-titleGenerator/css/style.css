@@ -1,17 +1,23 @@
+/* GOOGLE FONT */
+/* BODY */
+/* ANCHOR */
+/* HEADER */
+/* MEDIA @500px */
+/* MEDIA @480px */
+/* MEDIA @400px */
+
+/*************** GOOGLE FONT **************/
 @import "https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab";
+
+/************** BODY ***************/
 body {
-  background-color: #3498db;
+  background-color: #3ab6dd;
 }
 
+/************** ANCHOR ****************/
 p, a {
   font-family: Roboto, Sans-serif;
   font-size: 1.2em;
-}
-
-@media only screen and (max-width: 500px) {
-  p, a {
-    font-size: 1em;
-  }
 }
 
 a {
@@ -19,12 +25,13 @@ a {
 }
 
 a:hover {
-  border-bottom: 2px solid black;
-  color: black;
-  padding-bottom: 4px;
   text-decoration: none;
+  border-bottom: 2px dashed black;
+  color: black;
+  /* padding-bottom: 4px; */
 }
 
+/************** HEADER *************/
 h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px dotted white;
   color: white;
@@ -56,7 +63,75 @@ h6 {
   font-size: 1.4em;
 }
 
+/************** FOOTER **************/
+footer {
+  margin-top: 5vh;
+}
+
+footer p {
+  line-height: 3;
+  margin: 0 auto;
+  width: 60%;
+}
+
+/*********** FORM INPUT BUTTON  ***********/
+
+form {
+  margin-top: 5vh;
+}
+
+input {
+  border-radius: 10px;
+  height: 50px;
+  text-align: center;
+  width: 30%;
+}
+
+.btn-info {
+  background: none;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  width: 30%;
+}
+
+.btn-info:hover {
+  background: white;
+  color: #3498db;
+}
+
+.lead {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/************ OTHER *************/
+hr {
+  border: 2px dashed white;
+}
+
+.social {
+  display: inline;
+  list-style: decimal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+i {
+  padding: 25px;
+}
+
+i:hover {
+  font-size: 2em;
+}
+
+/********** MEDIA @500px *********/
 @media only screen and (max-width: 500px) {
+  p, a {
+    font-size: 1em;
+  }
+
   h1 {
     font-size: 2em;
     margin-top: -15vh;
@@ -76,81 +151,38 @@ h6 {
   h6 {
     font-size: 0.75em;
   }
-}
 
-footer {
-  margin-top: 5vh;
-}
-
-footer p {
-  line-height: 3;
-  margin: 0 auto;
-  width: 60%;
-}
-
-@media only screen and (max-width: 500px) {
   footer p {
     width: 85%;
   }
+
+  input {
+    height: 60px;
+    width: 80%;
+  }
+
+  .btn-info {
+    border: 1px solid #fff;
+    font-size: 1em;
+    width: 80%;
+  }
+
+  .lead {
+    line-height: 2;
+    width: 70%;
+  }
 }
 
+/********** MEDIA @480px *********/
+@media only screen and (max-width: 480px) {
+  i {
+    padding: 15px;
+  }
+}
 
-form {
-  margin-top: 20vh; }
-
-input {
-  border-radius: 10px;
-  height: 50px;
-  text-align: center;
-  width: 30%; }
-  @media only screen and (max-width: 500px) {
-    input {
-      height: 60px;
-      width: 80%; } }
-
-.btn-info {
-  background: none;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  width: 30%; }
-  @media only screen and (max-width: 500px) {
-    .btn-info {
-      border: 1px solid #fff;
-      font-size: 1em;
-      width: 80%; } }
-
-.btn-info:hover {
-  background: white;
-  color: #3498db; }
-
-.lead {
-  margin: 0 auto;
-  width: 50%; }
-  @media only screen and (max-width: 500px) {
-    .lead {
-      line-height: 2;
-      width: 70%; } }
-
-hr {
-  border: 2px dashed white; }
-
-.social {
-  display: inline;
-  list-style: decimal; }
-
-::-webkit-scrollbar {
-  display: none; }
-
-i {
-  padding: 25px; }
-  @media only screen and (max-width: 480px) {
-    i {
-      padding: 15px; } }
-  @media only screen and (max-width: 480px) and (max-width: 400px) {
-    i {
-      padding: 8px; } }
-
-i:hover {
-  font-size: 2em; }
-
-/*# sourceMappingURL=style.css.map */
+/********** MEDIA @400px *********/
+@media only screen and (max-width: 480px) and (max-width: 400px) {
+  i {
+    padding: 8px;
+  }
+}
